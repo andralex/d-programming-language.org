@@ -1068,18 +1068,16 @@ $(MULTICOLS 4,
 
 $(H2 $(LNAME2 global_symbols, Globally Defined Symbols))
 
-	These are defined in object$(UNDERSCORE).d, which is automatically imported by the default implementation.
+	These are defined in `object.d`, which is automatically imported by the default implementation.
 
-$(GRAMMAR
-$(GNAME Symbols):
-$(MULTICOLS 4,
-    $(D $(LINK2 arrays.html#strings, string)) (alias to immutable(char)[]) $(COMMENT This is important; people want to know these things up front.)
-    $(D $(LINK2 arrays.html#strings, wstring)) (alias to immutable(wchar)[])
-    $(D $(LINK2 arrays.html#strings, dstring)) (alias to immutable(dchar)[])
-
-    $(D $(LINK2 type.html#size_t, size_t))
-    $(D $(LINK2 type.html#ptrdiff_t, ptrdiff_t))
-))
+$(TABLE_2COLS Global Symbols,
+	$(THEAD Symbol, Meaning)
+    $(TROW $(D $(LINK2 arrays.html#strings, string)), alias for `immutable(char)[]`)
+    $(TROW $(D $(LINK2 arrays.html#strings, wstring)), alias for `immutable(wchar)[]`)
+    $(TROW $(D $(LINK2 arrays.html#strings, dstring)), alias for `immutable(dchar)[]`)
+    $(TROW $(D $(LINK2 type.html#size_t, size_t)), $(ARGS Type of size of objects (`uint` on 32-bit systems, `ulong` on 64-bit systems)))
+    $(TROW $(D $(LINK2 type.html#ptrdiff_t, ptrdiff_t)), Type of difference of two pointers (`int` on 32-bit systems, `long` on 64-bit systems))
+)
 
 $(H2 $(LNAME2 specialtokens, Special Tokens))
 
