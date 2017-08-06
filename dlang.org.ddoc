@@ -286,6 +286,7 @@ NOTICE=<span class="notice">$1</span>
 _=
 
 OPT=$(SUBSCRIPT opt)
+OPTIONAL_PAGEBREAK=
 _=
 
 PAGE_TOOLS=

@@ -234,6 +234,7 @@ $0
 _=
 
 OPT=\(\mathrm{\sb{opt}}\)
+OPTIONAL_PAGEBREAK=\pagebreak[$0]
 ORANGE={\color{orange}$0}
 _=
 

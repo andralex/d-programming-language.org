@@ -256,6 +256,7 @@ auto sz = S.sizeof;  // 14
         $(P Setting the alignment of a field aligns it to that power of 2, regardless
         of the size of the field.)
 
+$(OPTIONAL_PAGEBREAK 4)
 --------
 struct S
 {
@@ -321,6 +322,7 @@ $(GNAME DeprecatedAttribute):
         $(P Calling CTFE-able functions or using manifest constants is also possible.
         )
 
+        $(OPTIONAL_PAGEBREAK 4)
         ---------------
         import std.format;
         enum Message = format("%s and all its members are obsolete", Foobar.stringof);
@@ -595,6 +597,7 @@ $(H2 $(LNAME2 static, $(D static) Attribute))
         $(D static) is ignored when applied to other declarations.
         )
 
+$(OPTIONAL_PAGEBREAK 4)
 ---------------
 class Foo
 {
@@ -721,10 +724,9 @@ $(GNAME UserDefinedAttribute):
 
 And looks like:
 
+$(OPTIONAL_PAGEBREAK 4)
 ---
 @(3) int a;
----
----
 @("string", 7) int b;
 
 enum Foo;
